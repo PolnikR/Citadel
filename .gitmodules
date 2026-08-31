@@ -1,0 +1,3 @@
+[submodule "layers/governance-hub/ai-hub-gateway-solution-accelerator"]
+	path = layers/governance-hub/ai-hub-gateway-solution-accelerator
+	url = git@github.com:PolnikR/ai-hub-gateway-solution-accelerator.git
