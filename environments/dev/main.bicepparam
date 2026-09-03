@@ -63,4 +63,25 @@ param keyVaultSkuName = 'standard'
 // ============================================================================
 // ACCELERATOR SPECIFIC PARAMETERS
 // ============================================================================
-// Add DEV-specific AI Foundry and model configuration here when required.
+// AI Foundry instances configuration array
+param aiFoundryInstances = [
+  {
+    name: ''
+    location: 'swedencentral'
+    customSubDomainName: ''
+    defaultProjectName: 'vzdelai-governance-project'
+  }
+]
+
+// AI Foundry model deployments configuration
+param aiFoundryModelsConfig = [
+  {
+    name: 'MAI-Thinking-1'
+    publisher: 'Microsoft AI'
+    version: '2026-06-01'
+    sku: 'GlobalStandard'
+    capacity: 100
+    retirementDate: '2099-12-30'
+    aiserviceIndex: 0
+  }
+]
