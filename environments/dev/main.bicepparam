@@ -19,6 +19,7 @@ param apimSku = 'Developer'
 param apimSkuUnits = 1
 param eventHubCapacityUnits = 1
 param cosmosDbRUs = 400
+param logicAppsSkuCapacityUnits = 1
 
 // NETWORKING
 // Add DEV-specific networking parameters here.
