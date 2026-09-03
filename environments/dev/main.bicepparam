@@ -18,6 +18,7 @@ param tags = {
 param apimSku = 'Developer'
 param apimSkuUnits = 1
 param eventHubCapacityUnits = 1
+param cosmosDbRUs = 400
 
 // NETWORKING
 // Add DEV-specific networking parameters here.
