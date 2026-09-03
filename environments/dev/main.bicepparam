@@ -11,6 +11,8 @@ param tags = {
   'azd-env-name': 'ai-hub-vzdelai-dev'
   Environment: 'Development'
   CostCenter: 'Engineering'
+  Owner: ''
+  Criticality: 'Low'
   SecurityControl: 'Ignore'
 }
 
@@ -22,6 +24,10 @@ param cosmosDbRUs = 400
 param logicAppsSkuCapacityUnits = 1
 param apicSku = 'Free'
 param keyVaultSkuName = 'standard'
+
+// PARAMETER FILE STRATEGY
+param useExistingLogAnalytics = false
+param enableAPICenter = true
 
 // NETWORKING
 param useExistingVnet = false
@@ -38,6 +44,10 @@ param privateEndpointNsgName = 'nsg-pe-7cctcvzrj3ubi'
 param functionAppNsgName = 'nsg-functionapp-7cctcvzrj3ubi'
 param apimRouteTableName = 'rt-apim-7cctcvzrj3ubi'
 param foundryNetworkInjectionEnabled = false
+param apimNetworkType = 'External'
+param apimV2UsePrivateEndpoint = true
+param cosmosDbPublicAccess = 'Disabled'
+param eventHubNetworkAccess = 'Enabled'
 
 // FEATURE FLAGS
 // Add DEV-specific feature flags here.
