@@ -47,6 +47,7 @@ param eventHubNetworkAccess = 'Enabled'
 // ============================================================================
 // FEATURE FLAGS - Deploy specific capabilities
 // ============================================================================
+param entraAuth = false
 param enableAPICenter = true
 
 // ============================================================================
