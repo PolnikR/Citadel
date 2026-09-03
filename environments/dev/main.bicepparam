@@ -31,18 +31,10 @@ param enableAPICenter = true
 
 // NETWORKING
 param useExistingVnet = false
-param vnetName = 'vnet-7cctcvzrj3ubi'
 param vnetAddressPrefix = '10.170.0.0/24'
-param apimSubnetName = 'snet-apim'
 param apimSubnetPrefix = '10.170.0.0/26'
-param privateEndpointSubnetName = 'snet-private-endpoint'
 param privateEndpointSubnetPrefix = '10.170.0.64/26'
-param functionAppSubnetName = 'snet-functionapp'
 param functionAppSubnetPrefix = '10.170.0.128/26'
-param apimNsgName = 'nsg-apim-7cctcvzrj3ubi'
-param privateEndpointNsgName = 'nsg-pe-7cctcvzrj3ubi'
-param functionAppNsgName = 'nsg-functionapp-7cctcvzrj3ubi'
-param apimRouteTableName = 'rt-apim-7cctcvzrj3ubi'
 param foundryNetworkInjectionEnabled = false
 param apimNetworkType = 'External'
 param apimV2UsePrivateEndpoint = true
